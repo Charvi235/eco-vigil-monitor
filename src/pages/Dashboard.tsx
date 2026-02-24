@@ -215,7 +215,8 @@ export default function Dashboard() {
           <NeonBadge active={true} />
           <select 
             value={selectedId} 
-            onChange={(e) => setSelectedId(Number(e.target.value))}
+            // onChange={(e) => setSelectedId(Number(e.target.value))}
+            onChange={(e) => setSelectedId(e.target.value)}
             className="bg-transparent text-sm text-gray-300 focus:outline-none cursor-pointer [&>option]:text-black py-1 px-2"
           >
             {sensorList.map(s => (
